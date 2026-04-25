@@ -9,7 +9,7 @@ Unlike the simpler input-driver repos in Batch 1, this package carries MediaPipe
 *   **Type:** Input Driver
 *   **License:** **Mozilla Public License 2.0 (MPL 2.0)**
 *   **Dependencies:**
-    *   `aerobeat-core` (Required for the Godot addon/testbed contract)
+    *   `aerobeat-input-core` (Canonical Godot-side input contract)
     *   `aerobeat-vendor-*` (Allowed)
     *   Native / Python runtime dependencies for real MediaPipe execution (repo currently ships only an empty placeholder `requirements.txt`, so the Godot-side migration does not claim a fully pinned Python runtime yet)
 
@@ -35,7 +35,7 @@ cd .testbed
 godotenv addons install
 ```
 
-That restores the pinned Godot-side dev/test dependencies (`aerobeat-core` and GUT) into `.testbed/addons/`.
+That restores this repo's current Godot-side dev/test manifest into `.testbed/addons/`. Canonical lane wording for this dependency is `aerobeat-input-core`, even though the manifest still carries transition-era naming.
 
 ## Open the workbench
 
@@ -79,7 +79,7 @@ It does **not** claim that this repo now contains a complete repo-local MediaPip
 ## Validation notes
 
 - `.testbed/addons.jsonc` is the committed dev/test dependency contract.
-- The manifest pins `aerobeat-core` to `v0.1.0` and GUT to `main`.
+- The current manifest still pins the transition-era `aerobeat-core` package key to `v0.1.0` alongside GUT `main`. Canonical lane ownership is `aerobeat-input-core`.
 - Repo-local unit tests live under `.testbed/tests/`; the hidden workbench uses the committed `.testbed/src -> ../src` bridge for this repo's `src/`-rooted package layout.
 - The current package shape is consumed from the repo root (`subfolder: "/"`) for downstream installs.
 - CI follows the same GodotEnv restore/import/GUT path as local workbench validation; it does not attempt to install or exercise a real MediaPipe-native runtime because the repo does not yet ship a concrete pinned Python/native environment definition.
