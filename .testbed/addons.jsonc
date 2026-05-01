@@ -1,10 +1,10 @@
 {
   "$schema": "https://chickensoft.games/schemas/addons.schema.json",
   "addons": {
-    // Batch 4 pins the foundational core contract for the Godot-side MediaPipe addon.
-    "aerobeat-core": {
-      "url": "git@github.com:AeroBeat-Workouts/aerobeat-core.git",
-      "checkout": "v0.1.0",
+    // Foundational shared input contract for this future-facing MediaPipe package.
+    "aerobeat-input-core": {
+      "url": "git@github.com:AeroBeat-Workouts/aerobeat-input-core.git",
+      "checkout": "v0.1.2",
       "subfolder": "/"
     },
     // GUT drives the repo-local test suite inside the hidden testbed/workbench.

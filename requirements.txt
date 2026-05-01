@@ -1,0 +1,6 @@
+# Intentionally unpinned for now.
+#
+# This repo is preserved as a future native/mobile MediaPipe camera path,
+# not as the current official AeroBeat v1 gameplay-input implementation.
+# Add concrete runtime dependencies here only when this repo gains an active,
+# validated native/on-device MediaPipe execution story.
