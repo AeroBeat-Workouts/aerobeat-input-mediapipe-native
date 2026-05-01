@@ -66,7 +66,7 @@ This repo needed a deeper cleanup than the lighter platform-pass repos because i
 - Added test coverage that verifies the runtime placeholders load and explicitly deny official-v1/completed-runtime claims.
 - Clarified `requirements.txt` as an intentionally unpinned placeholder rather than an accidental omission.
 - Validation passed via the repo's documented GodotEnv + Godot import + GUT path.
-- Commit hash: `b433f5a4a53ff7fc06e09f0124a11ce2b929bfbd`
+- Implementation commit hash: `0f7fd88a759e062a464fc78d903cb33635ffd319`; plan handoff commit: `e9db80bccf898fab6273f4760af77c6acd81433c`
 
 ---
 
@@ -90,6 +90,7 @@ A deeper truth-alignment cleanup for `aerobeat-input-mediapipe-native` that keep
 
 **Commits:**
 - `0f7fd88a759e062a464fc78d903cb33635ffd319` - Align native MediaPipe repo with downscoped v1 truth
+- `e9db80bccf898fab6273f4760af77c6acd81433c` - Record native MediaPipe coder handoff details
 
 **QA Handoff Notes:**
 - Verify README/plugin wording stays future-facing and never calls this the current official v1 gameplay-input repo.
