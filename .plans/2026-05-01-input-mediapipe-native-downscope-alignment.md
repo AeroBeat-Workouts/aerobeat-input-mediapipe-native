@@ -89,7 +89,7 @@ A deeper truth-alignment cleanup for `aerobeat-input-mediapipe-native` that keep
 - Result: `3/3 passed`
 
 **Commits:**
-- `b433f5a4a53ff7fc06e09f0124a11ce2b929bfbd` - Align native MediaPipe repo with downscoped v1 truth
+- `0f7fd88a759e062a464fc78d903cb33635ffd319` - Align native MediaPipe repo with downscoped v1 truth
 
 **QA Handoff Notes:**
 - Verify README/plugin wording stays future-facing and never calls this the current official v1 gameplay-input repo.
