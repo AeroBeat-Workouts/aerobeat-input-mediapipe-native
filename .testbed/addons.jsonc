@@ -1,6 +1,12 @@
 {
   "$schema": "https://chickensoft.games/schemas/addons.schema.json",
   "addons": {
+    // Install this repo into the hidden workbench the same way a consumer does.
+    "aerobeat-input-mediapipe-native": {
+      "url": "..",
+      "source": "symlink",
+      "subfolder": "/"
+    },
     // Foundational shared input contract for this future-facing MediaPipe package.
     "aerobeat-input-core": {
       "url": "git@github.com:AeroBeat-Workouts/aerobeat-input-core.git",
