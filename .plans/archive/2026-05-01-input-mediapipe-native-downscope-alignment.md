@@ -1,7 +1,9 @@
 # aerobeat-input-mediapipe-native
 
 **Date:** 2026-05-01  
-**Status:** In Progress  
+**Status:** Stale
+
+**Stale Archive Note:** Marked stale and archived on 2026-08-03 during Byte workspace cleanup; newer AeroBeat work remains with Pico.
 **Agent:** Chip 🐱‍💻
 
 ---
